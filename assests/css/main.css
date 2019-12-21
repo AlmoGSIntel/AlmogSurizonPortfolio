@@ -66,7 +66,7 @@ html, body{
 .header{
     background: rgb(216, 216, 216);
     /* background: rgb(212, 212, 212); */
-    position: fixed;
+    position: sticky;
     height: 8vh;
     width: 100%;
     min-height: clac(max-content + 3rem);
@@ -115,31 +115,36 @@ html, body{
     transform: translateY(-50%);
 }
 
+#mainImg{
+    width: 100%;
+    height: auto;
+    opacity: 0%;
+}
 .mainImage{
     /* position: sticky; */
     position: relative;
     background-image: url("../Images/mainImage5.png");
     background-size: 100%;
-    background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+    height: max-content;
+    overflow: hidden;
+
 }
 
 .mainImage .resomeBtn{
     position: absolute;
-    font-size: 1.5rem;
+    top: 63%;
     left: 50%;
+    font-size: 1.5rem;
     transform: translateX(-50%);
-    top: 62vh;
 }
 
 .mainImage .mainHeadline{
     font-size: 3rem;
     position: absolute;
-    left: 6rem;
-    top: 30vh;
+    left: 8%;
+    top: 30%;
     font-style: italic;
-    
 }
 
 
