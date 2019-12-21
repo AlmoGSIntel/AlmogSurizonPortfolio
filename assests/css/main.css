@@ -67,6 +67,8 @@ html, body{
     background: rgb(216, 216, 216);
     /* background: rgb(212, 212, 212); */
     position: sticky;
+    top: 0px;
+    left: 0px;
     height: 8vh;
     width: 100%;
     min-height: clac(max-content + 3rem);
