@@ -152,35 +152,40 @@ html, body{
     font-style: italic;
 }
 
-.gardiant1{
+
+.ProjectsContainer{
+    box-sizing: border-box;
     width: 100%;
-    height: 50%;
-    background: linear-gradient(rgb(230, 230, 230), rgb(29, 29, 29));
-}
-.gardiant2{
-    width: 100%;
-    height: 50%;
-    background: linear-gradient(rgb(29, 29, 29),rgb(230, 230, 230));
+    padding: 20px 15%;
+    display: grid;
+    grid-template-areas:'heading heading heading'
+                        'project1 project2 project3';
+    grid-gap: 3px;
 }
 
-.projectsContainer{
-    width: 100%;
-    height: auto;
+.ProjectsContainer h1{
+    text-align: center;
+    grid-area: heading;
 }
-.projectsContainer .project{
+.ProjectsContainer .projectBox{
     width: 100%;
-    height: auto;
-    margin: 0 50%;
-    border: transparent;
-    transform: translateX(-50%);
-    border-radius: 20px;
-    background: rgb(168, 168, 168);
+    height: 450px;
+    background: #000;
+    box-sizing: border-box;
+}
+.ProjectsContainer .Sorti{
+    background: red;
+    grid-area: project3;
+}
+.ProjectsContainer .SortiOld{
+    background: blue;
+    grid-area: project2;
 }
 
-.Sorti{
-    background: rgb(29, 29, 29);
-
+.ProjectsContainer .LinkedList{
+    grid-area: project1;
 }
+
 
 .footer{
     position: relative;
