@@ -37,7 +37,6 @@ html, body{
 
 .container{
     width: 100%;
-    height: 100%;
 }
 
 .primaryBtn{
@@ -68,14 +67,16 @@ html, body{
 .header{
     background: rgb(216, 216, 216);
     /* background: rgb(212, 212, 212); */
-    position: fixed;
+    position: sticky;
     top: 0px;
     left: 0px;
+    right: 0px;
     height: 8vh;
     width: 100%;
     min-height: clac(max-content + 3rem);
     border-bottom: 1px solid black;
     z-index: 10;
+    
 }
 
 #AlmogSurizonLogo{
@@ -127,13 +128,12 @@ html, body{
     opacity: 0%;
 }
 .mainImage{
-    /* position: sticky; */
     position: relative;
     background-image: url("../Images/mainImage5.png");
     background-size: 100%;
     width: 100%;
     height: max-content;
-    overflow: hidden;
+    z-index: 1;
 
 }
 
@@ -156,17 +156,20 @@ html, body{
 
 .ProjectsContainer{
     box-sizing: border-box;
+    position: relative;
     width: 100%;
     padding: 20px 15%;
     display: grid;
     grid-template-areas:'heading heading heading'
                         'project1 project2 project3';
-    grid-gap: 3px;
+    grid-gap: 10px;
+        z-index: 1;
 }
 
 .ProjectsContainer h1{
     text-align: center;
     grid-area: heading;
+    font-size: 3rem;
 }
 .ProjectsContainer .projectBox{
     width: 100%;
