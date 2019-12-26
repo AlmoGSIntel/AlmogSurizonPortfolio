@@ -147,6 +147,7 @@ html, body{
 
 .mainImage .mainHeadline{
     font-size: 300%;
+    color: rgb(221, 221, 221);
     position: absolute;
     left: 8%;
     top: 30%;
